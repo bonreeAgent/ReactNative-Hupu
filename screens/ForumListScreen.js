@@ -47,6 +47,8 @@ class SideMenu extends Component {
             while (true) {
                 console.log('卡死测试');
             }
+        } else if (forum === 'alert') {
+            alert('温馨提示', '正文内容');
         }
         else {
             this.props.store.selectForum(forum);
@@ -64,6 +66,7 @@ class SideMenu extends Component {
                     <Text style={{marginLeft: 15, marginBottom: 10}} onPress={this._handleEntryPress.bind(this, 'recommend')}>帖子推荐</Text>
                     <Text style={{marginLeft: 15, marginBottom: 10}} onPress={this._handleEntryPress.bind(this, 'error')}>JS错误</Text>
                     <Text style={{marginLeft: 15, marginBottom: 10}} onPress={this._handleEntryPress.bind(this, 'lag')}>卡死</Text>
+                    <Text style={{marginLeft: 15, marginBottom: 10}} onPress={this._handleEntryPress.bind(this, 'alert')}>弹出框</Text>
                     <List noBorder>
                         {
                             forums && forums.map((e, i) => {
