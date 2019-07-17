@@ -41,7 +41,14 @@ class SideMenu extends Component {
         this.props.store.selectSubForum(null);
         if(forum === 'recommend'){
             this.navigateToScreen('TopicList', forum);
-        }else {
+        } else if (forum === 'error') {
+            console.log(err);
+        } else if (forum === 'lag') {
+            while (true) {
+                console.log('卡死测试');
+            }
+        }
+        else {
             this.props.store.selectForum(forum);
             this.navigateToScreen('ForumDetail', forum);
         }
@@ -55,6 +62,8 @@ class SideMenu extends Component {
                 <Content style={{marginTop: 40, marginLeft: 20}}>
                     { this.state.loading && <ActivityIndicator style={{margin: 20}}/> }
                     <Text style={{marginLeft: 15, marginBottom: 10}} onPress={this._handleEntryPress.bind(this, 'recommend')}>帖子推荐</Text>
+                    <Text style={{marginLeft: 15, marginBottom: 10}} onPress={this._handleEntryPress.bind(this, 'error')}>JS错误</Text>
+                    <Text style={{marginLeft: 15, marginBottom: 10}} onPress={this._handleEntryPress.bind(this, 'lag')}>卡死</Text>
                     <List noBorder>
                         {
                             forums && forums.map((e, i) => {
