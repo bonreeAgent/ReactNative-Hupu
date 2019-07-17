@@ -11,11 +11,16 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <bonreeAgent/bonreeAgent.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  
+  [BRSAgent setConfigAddress:@"http://devtest.ibr.cc:20107/config"];
+  [BRSAgent startWithAppID:@"7eed88ad-4cb2-4a9d-b014-32840d92d9b4"];
+  
   NSURL *jsCodeLocation;
 
   //Production

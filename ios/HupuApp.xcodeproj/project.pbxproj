@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -46,6 +47,9 @@
 		79558C5A1E1F4422A3EC2184 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E1A9464E6C84085B579B392 /* rubicon-icon-font.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		977ED00FC75C4803A87831D6 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C9DFAA368A7403C93677DAC /* Ionicons.ttf */; };
+		9C98E5C222DF0E0900A4C2E7 /* bonreeAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C98E59C22DF0E0900A4C2E7 /* bonreeAgent.framework */; };
+		9C98E5D022DF0F3400A4C2E7 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C98E5CF22DF0F3400A4C2E7 /* libresolv.9.tbd */; };
+		9C98E5D222DF0F3A00A4C2E7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C98E5D122DF0F3A00A4C2E7 /* libc++.tbd */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B726E0EAB6D24FFFA6DCCA45 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AB40502BF064D9D8AC8F1B9 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
@@ -359,6 +363,9 @@
 		6BF5B00BDD3E4AEDA439DDCE /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		9C98E59C22DF0E0900A4C2E7 /* bonreeAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = bonreeAgent.framework; sourceTree = "<group>"; };
+		9C98E5CF22DF0F3400A4C2E7 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		9C98E5D122DF0F3A00A4C2E7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9C9DFAA368A7403C93677DAC /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		A2A28C0FAC80409590A6E0FC /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
@@ -380,7 +387,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C98E5D222DF0F3A00A4C2E7 /* libc++.tbd in Frameworks */,
+				9C98E5D022DF0F3400A4C2E7 /* libresolv.9.tbd in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
+				9C98E5C222DF0E0900A4C2E7 /* bonreeAgent.framework in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -503,6 +513,7 @@
 		13B07FAE1A68108700A75B9A /* HupuApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C98E59C22DF0E0900A4C2E7 /* bonreeAgent.framework */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -540,6 +551,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C98E5D122DF0F3A00A4C2E7 /* libc++.tbd */,
+				9C98E5CF22DF0F3400A4C2E7 /* libresolv.9.tbd */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 			);
 			name = Frameworks;
@@ -753,6 +766,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1267,6 +1281,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = GWLRB55R4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HupuApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1290,6 +1308,10 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GWLRB55R4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HupuApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
